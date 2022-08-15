@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <class>com.binanceapibackend.Database.entity.CommonLogin</class>
+        <class>com.binanceapibackend.Database.entity.CommonUserData</class>
+        <properties>
+            <property name="toplink.jdbc.url"
+                      value="jdbc:sqlserver://LAPTOP-91APEP9U\SQLEXPRESS:1433;database=Binance"/>
+            <property name="toplink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="hibernate.connection.url"
+                      value="jdbc:sqlserver://LAPTOP-91APEP9U\SQLEXPRESS:1433;database=Binance"/>
+            <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="openjpa.ConnectionURL"
+                      value="jdbc:sqlserver://LAPTOP-91APEP9U\SQLEXPRESS:1433;database=Binance"/>
+            <property name="openjpa.ConnectionDriverName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="eclipselink.jdbc.url"
+                      value="jdbc:sqlserver://LAPTOP-91APEP9U\SQLEXPRESS:1433;database=Binance"/>
+            <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="hibernate.connection.user" value="sa"/>
+            <property name="hibernate.connection.password" value="Szymon6677"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
